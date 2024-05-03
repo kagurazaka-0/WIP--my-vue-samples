@@ -1,27 +1,33 @@
 import { fileURLToPath, URL } from "node:url"
-import vue from "@vitejs/plugin-vue"
-import vueJsx from "@vitejs/plugin-vue-jsx"
-import AutoImport from "unplugin-auto-import/vite"
-import VueRouter from "unplugin-vue-router/vite"
+import pluginVue from "@vitejs/plugin-vue"
+import pluginVueJsx from "@vitejs/plugin-vue-jsx"
+import pluginAutoImport from "unplugin-auto-import/vite"
+import { PrimeVueResolver } from "unplugin-vue-components/resolvers"
+import pluginVueComponents from "unplugin-vue-components/vite"
+import pluginVueRouter from "unplugin-vue-router/vite"
 import { defineConfig } from "vite"
-import VueDevTools from "vite-plugin-vue-devtools"
+import pluginVueDevTools from "vite-plugin-vue-devtools"
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     // @refs: https://github.com/unplugin/unplugin-auto-import#configuration
-    AutoImport({
+    pluginAutoImport({
       dts: "./node_modules/.cache/auto-imports.d.ts",
       imports: ["vue"],
     }),
-    VueRouter({
+    pluginVueRouter({
       dts: "./node_modules/.cache/router.d.ts",
 
       /* options */
     }),
-    vue(),
-    vueJsx(),
-    VueDevTools(),
+    pluginVueComponents({
+      dts: "./node_modules/.cache/components.d.ts",
+      resolvers: [PrimeVueResolver({ prefix: "P" })],
+    }),
+    pluginVue(),
+    pluginVueJsx(),
+    pluginVueDevTools(),
   ],
   resolve: {
     alias: {
