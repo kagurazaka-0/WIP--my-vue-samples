@@ -1,9 +1,7 @@
 <script setup lang="ts">
-//
+const r = ref(0)
 </script>
 
 <template>
-  <div>
-    <RouterView />
-  </div>
+  <div @click="r++">{{ r }}</div>
 </template>

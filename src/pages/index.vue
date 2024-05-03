@@ -1,9 +1,7 @@
 <script setup lang="ts">
-//
+const a = 10
 </script>
 
 <template>
-  <div>
-    <RouterView />
-  </div>
+  <div>hello {{ a }}</div>
 </template>
