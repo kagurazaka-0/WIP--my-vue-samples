@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
-    "primevue": "^3.52.0",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vuestic-ui": "^1.9.10"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",

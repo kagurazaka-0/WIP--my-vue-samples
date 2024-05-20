@@ -11,15 +11,15 @@ importers:
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.4.5)(vue@3.4.25(typescript@5.4.5))
-      primevue:
-        specifier: ^3.52.0
-        version: 3.52.0(vue@3.4.25(typescript@5.4.5))
       vue:
         specifier: ^3.4.21
         version: 3.4.25(typescript@5.4.5)
       vue-router:
         specifier: ^4.3.0
         version: 4.3.2(vue@3.4.25(typescript@5.4.5))
+      vuestic-ui:
+        specifier: ^1.9.10
+        version: 1.9.10(vue@3.4.25(typescript@5.4.5))
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.2.1
@@ -378,6 +378,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@floating-ui/core@1.6.1':
+    resolution: {integrity: sha512-42UH54oPZHPdRHdw6BgoBD6cg/eVTmVrFcgeRDM3jbO7uxSoipVcmcIGFcA5jmOHO5apcyvBhkSKES3fQJnu7A==}
+
+  '@floating-ui/dom@1.6.5':
+    resolution: {integrity: sha512-Nsdud2X65Dz+1RHjAIP0t8z5e2ff/IRbei6BqFrl1urT8sDVzM1HMQ+R0XcU5ceRfyO3I6ayeqIfh+6Wb8LGTw==}
+
+  '@floating-ui/utils@0.2.2':
+    resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+
+  '@floating-ui/vue@1.0.6':
+    resolution: {integrity: sha512-EdrOljjkpkkqZnrpqUcPoz9NvHxuTjUtSInh6GMv3+Mcy+giY2cE2pHh9rpacRcZ2eMSCxel9jWkWXTjLmY55w==}
+
   '@ianvs/prettier-plugin-sort-imports@4.2.1':
     resolution: {integrity: sha512-NKN1LVFWUDGDGr3vt+6Ey3qPeN/163uR1pOPAlkWpgvAqgxQ6kSdUf1F0it8aHUtKRUzEGcK38Wxd07O61d7+Q==}
     peerDependencies:
@@ -514,6 +526,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@types/lodash@4.17.1':
+    resolution: {integrity: sha512-X+2qazGS3jxLAIz5JDXDzglAF3KpijdhFxlf/V1+hEsOUc+HnWi81L/uv/EvGuV90WY+7mPGFCUDGfQC3Gj95Q==}
 
   '@types/node@20.12.7':
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
@@ -683,11 +698,17 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  cleave.js@1.6.0:
+    resolution: {integrity: sha512-ivqesy3j5hQVG3gywPfwKPbi/7ZSftY/UNp5uphnqjr25yI2CP8FS2ODQPzuLXXnNLi29e2+PgPkkiKUXLs/Nw==}
+
   color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
 
   color-name@1.1.3:
     resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
+
+  colortranslator@1.10.2:
+    resolution: {integrity: sha512-+vAnjWTdI0Vh6fT3I+dA6DAtnLfo91TzYKjewYeZ2dHdhF8Yo5OMo47inNJdJOXwjJ9lPD0LkNeQOLU/8yyfZA==}
 
   computeds@0.0.1:
     resolution: {integrity: sha512-7CEBgcMjVmitjYo5q8JTJVra6X5mQ20uTThdK+0kR7UEaDrAWEQcRiBtWJzga4eRpP6afNwwLsX2SET2JhVB1Q==}
@@ -898,6 +919,9 @@ packages:
     resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==}
     engines: {node: '>=14'}
 
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
@@ -1039,11 +1063,6 @@ packages:
     resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
-
-  primevue@3.52.0:
-    resolution: {integrity: sha512-HLOVP5YI0ArFKUhIyfZsWmTNMaBYNCBWC/3DYvdd/Po4LY5/WXf7yIYvArE2q/3OuwSXJXvjlR8UNQeJYRSQog==}
-    peerDependencies:
-      vue: ^3.0.0
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -1295,6 +1314,11 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  vuestic-ui@1.9.10:
+    resolution: {integrity: sha512-gUwf2TAWpW1/kUNCiZ8zBC4f3CEZDHXkJQsicTU2KEW6D91q6A24DSw8grxcl7myrav4YQhkl6kg0WvVa+CW5Q==}
+    peerDependencies:
+      vue: ^3.0.4
 
   webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
@@ -1605,6 +1629,26 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
+  '@floating-ui/core@1.6.1':
+    dependencies:
+      '@floating-ui/utils': 0.2.2
+
+  '@floating-ui/dom@1.6.5':
+    dependencies:
+      '@floating-ui/core': 1.6.1
+      '@floating-ui/utils': 0.2.2
+
+  '@floating-ui/utils@0.2.2': {}
+
+  '@floating-ui/vue@1.0.6(vue@3.4.25(typescript@5.4.5))':
+    dependencies:
+      '@floating-ui/dom': 1.6.5
+      '@floating-ui/utils': 0.2.2
+      vue-demi: 0.14.7(vue@3.4.25(typescript@5.4.5))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
   '@ianvs/prettier-plugin-sort-imports@4.2.1(@vue/compiler-sfc@3.4.25)(prettier@3.2.5)':
     dependencies:
       '@babel/core': 7.24.4
@@ -1709,6 +1753,8 @@ snapshots:
   '@tsconfig/node20@20.1.4': {}
 
   '@types/estree@1.0.5': {}
+
+  '@types/lodash@4.17.1': {}
 
   '@types/node@20.12.7':
     dependencies:
@@ -1946,11 +1992,15 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  cleave.js@1.6.0: {}
+
   color-convert@1.9.3:
     dependencies:
       color-name: 1.1.3
 
   color-name@1.1.3: {}
+
+  colortranslator@1.10.2: {}
 
   computeds@0.0.1: {}
 
@@ -2141,6 +2191,8 @@ snapshots:
       mlly: 1.7.0
       pkg-types: 1.1.0
 
+  lodash@4.17.21: {}
+
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
@@ -2261,10 +2313,6 @@ snapshots:
       source-map-js: 1.2.0
 
   prettier@3.2.5: {}
-
-  primevue@3.52.0(vue@3.4.25(typescript@5.4.5)):
-    dependencies:
-      vue: 3.4.25(typescript@5.4.5)
 
   queue-microtask@1.2.3: {}
 
@@ -2547,6 +2595,17 @@ snapshots:
       '@vue/shared': 3.4.25
     optionalDependencies:
       typescript: 5.4.5
+
+  vuestic-ui@1.9.10(vue@3.4.25(typescript@5.4.5)):
+    dependencies:
+      '@floating-ui/vue': 1.0.6(vue@3.4.25(typescript@5.4.5))
+      '@types/lodash': 4.17.1
+      cleave.js: 1.6.0
+      colortranslator: 1.10.2
+      lodash: 4.17.21
+      vue: 3.4.25(typescript@5.4.5)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
 
   webpack-sources@3.2.3: {}
 

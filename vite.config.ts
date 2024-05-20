@@ -2,7 +2,6 @@ import { fileURLToPath, URL } from "node:url"
 import pluginVue from "@vitejs/plugin-vue"
 import pluginVueJsx from "@vitejs/plugin-vue-jsx"
 import pluginAutoImport from "unplugin-auto-import/vite"
-import { PrimeVueResolver } from "unplugin-vue-components/resolvers"
 import pluginVueComponents from "unplugin-vue-components/vite"
 import pluginVueRouter from "unplugin-vue-router/vite"
 import { defineConfig } from "vite"
@@ -18,13 +17,15 @@ export default defineConfig({
     }),
     pluginVueRouter({
       dts: "./node_modules/.cache/router.d.ts",
-
-      /* options */
     }),
-    pluginVueComponents({
-      dts: "./node_modules/.cache/components.d.ts",
-      resolvers: [PrimeVueResolver({ prefix: "P" })],
-    }),
+    // pluginVueComponents({
+    //   resolvers: [
+    //     // refs: https://ui.vuestic.dev/extensions/unplugin-vue-components
+    //     (componentName) => {
+    //       if (componentName.startsWith("Va")) return { name: componentName, from: "vuestic-ui" }
+    //     },
+    //   ],
+    // }),
     pluginVue(),
     pluginVueJsx(),
     pluginVueDevTools(),
